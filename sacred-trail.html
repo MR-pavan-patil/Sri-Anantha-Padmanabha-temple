@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sacred Trail — Sri Anantha Padmanabha Temple | Bidar, Karnataka</title>
+  <meta name="description"
+    content="Explore the sacred trail of temples near Sri Anantha Padmanabha Temple in Bidar, Karnataka. Discover Vishnu Mandir, Mailar Mallanna, Shani Mahatma, Manik Prabhu, Vitthal Rukmini, and Gaimukh temples." />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕉️</text></svg>" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+
+  <!-- ═══════ PAGE LOADER ═══════ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__symbol">🕉️</div>
+    <div class="loader__text">Sri Anantha Padmanabha Temple</div>
+    <div class="loader__bar">
+      <div class="loader__bar-inner"></div>
+    </div>
+  </div>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar scrolled" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand" aria-label="Go to homepage">
+        <div class="navbar__om">🕉️</div>
+        <div class="navbar__logo">
+          Sri Anantha Padmanabha
+          <span class="navbar__logo-sub">Sacred Temple · Bidar</span>
+        </div>
+      </a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="about.html" class="navbar__link">About Temple</a>
+        <a href="history.html" class="navbar__link">History</a>
+        <a href="sacred-trail.html" class="navbar__link active">Sacred Trail</a>
+        <a href="gallery.html" class="navbar__link">Gallery</a>
+        <a href="visit.html" class="navbar__link">Visit</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ═══════ PAGE HERO ═══════ -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="images/trail-hero.png" alt="Sacred forest trail leading to temples near Bidar" loading="eager" />
+    </div>
+    <div class="page-hero__content">
+      <div class="page-hero__breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="page-hero__breadcrumb-sep">/</span>
+        <span>Sacred Trail</span>
+      </div>
+      <h1 class="page-hero__title">The Sacred Trail</h1>
+      <p class="page-hero__desc">
+        A spiritual guide to the divine temples nestled within the sacred forest region
+        of Bidar — each a jewel in a garland of devotion.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════ SACRED TRAIL OVERVIEW ═══════ -->
+  <section class="content-section content-section--cream" id="overview">
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-layout__content reveal reveal--left">
+          <span class="section-label">Trail Overview</span>
+          <h2 class="section-heading">Embark on a<br />Sacred Journey</h2>
+          <div class="divider"></div>
+          <p class="split-layout__text">
+            The forest region surrounding Sri Anantha Padmanabha Temple is home to a remarkable
+            constellation of sacred shrines, each dedicated to a different deity and each offering
+            a unique spiritual experience. Together, these temples form the Sacred Trail — a
+            pilgrimage route that has been walked by devotees for centuries.
+          </p>
+          <p class="split-layout__text">
+            From the serene Vishnu Mandir to the powerful Shani Mahatma Temple, from the
+            ancient Mailar Mallanna shrine to the revered Manik Prabhu Mandir, each temple
+            along the trail tells its own story of faith, devotion, and divine grace. The
+            trail connects these sacred spaces through beautiful forest pathways, making the
+            journey itself a meditative experience.
+          </p>
+          <p class="split-layout__text">
+            Whether you undertake the complete trail in a single day or visit the temples
+            over multiple visits, the Sacred Trail promises a transformative spiritual experience
+            that deepens with each step taken along its ancient path.
+          </p>
+        </div>
+        <div class="split-layout__image reveal reveal--right reveal--delay-2">
+          <img src="images/sacred-trail.png" alt="Forest trail connecting the sacred temples" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TEMPLE CARDS ═══════ -->
+  <section class="content-section content-section--white" id="temples">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:var(--space-3xl);">
+        <span class="section-label reveal">Sacred Temples</span>
+        <h2 class="section-heading section-heading--centered reveal reveal--delay-1">
+          Temples Along<br />the Sacred Trail
+        </h2>
+        <p class="section-desc section-desc--centered reveal reveal--delay-2">
+          Discover the six sacred temples that form the divine pilgrimage circuit
+          through the forest region near Bidar.
+        </p>
+        <div class="divider divider--centered reveal reveal--delay-3"></div>
+      </div>
+
+      <div class="temple-cards-grid">
+        <!-- Temple 1: Vishnu Mandir -->
+        <div class="temple-card reveal reveal--delay-1" id="temple-vishnu-mandir">
+          <div class="temple-card__image">
+            <img src="images/temple-vishnu-mandir.png" alt="Vishnu Mandir in the forest clearing" loading="lazy" />
+            <span class="temple-card__distance">~3 KM</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 01</span>
+            <h3 class="temple-card__title">Vishnu Mandir</h3>
+            <p class="temple-card__desc">
+              A beautiful ancient shrine dedicated to Lord Vishnu, situated in a serene forest
+              clearing. Known for its exquisite stone carvings and the peaceful atmosphere that
+              surrounds the sanctum. Devotees gather here for daily aarti and special abhishekam.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Sacred Vishnu shrine with ancient stone carvings and daily rituals</span>
+            </div>
+            <a href="#" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Temple 2: Mailar Mallanna Mandir -->
+        <div class="temple-card reveal reveal--delay-2" id="temple-mallanna">
+          <div class="temple-card__image">
+            <img src="images/temple-mallanna.png" alt="Mailar Mallanna Mandir on the hillside" loading="lazy" />
+            <span class="temple-card__distance">~7 KM</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 02</span>
+            <h3 class="temple-card__title">Mailar Mallanna Mandir</h3>
+            <p class="temple-card__desc">
+              Perched on a scenic hillside, this revered temple is dedicated to Lord Mallanna
+              (Mailarlingeshwara), a form of Lord Shiva deeply venerated in the Deccan region.
+              The temple is known for its vibrant annual festival and panoramic forest views.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Hilltop Shiva temple with panoramic views and vibrant festivals</span>
+            </div>
+            <a href="#" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Temple 3: Shani Mahatma Mandir -->
+        <div class="temple-card reveal reveal--delay-3" id="temple-shani">
+          <div class="temple-card__image">
+            <img src="images/gallery-pillars.png" alt="Shani Mahatma Mandir with traditional architecture"
+              loading="lazy" />
+            <span class="temple-card__distance">~5 KM</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 03</span>
+            <h3 class="temple-card__title">Shani Mahatma Mandir</h3>
+            <p class="temple-card__desc">
+              A powerful temple dedicated to Lord Shani (Saturn), believed to alleviate the
+              effects of Shani Dosha. Devotees offer mustard oil and black sesame seeds in
+              traditional worship. The temple is especially crowded on Saturdays.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Renowned Shani temple for planetary remedies and Saturday worship</span>
+            </div>
+            <a href="#" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Temple 4: Manik Prabhu Mandir -->
+        <div class="temple-card reveal reveal--delay-4" id="temple-manik-prabhu">
+          <div class="temple-card__image">
+            <img src="images/gallery-ritual.png" alt="Manik Prabhu Mandir and its devotional atmosphere"
+              loading="lazy" />
+            <span class="temple-card__distance">~12 KM</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 04</span>
+            <h3 class="temple-card__title">Manik Prabhu Mandir</h3>
+            <p class="temple-card__desc">
+              A revered shrine dedicated to Shri Manik Prabhu, a 19th-century saint who
+              preached the unity of all religions. The temple complex includes a samadhi shrine,
+              a meditation hall, and beautiful gardens. A place of interfaith harmony.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Interfaith shrine promoting religious harmony and unity</span>
+            </div>
+            <a href="#" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Temple 5: Vitthal Rukmini Mandir -->
+        <div class="temple-card reveal reveal--delay-5" id="temple-vitthal-rukmini">
+          <div class="temple-card__image">
+            <img src="images/temple-main.png" alt="Vitthal Rukmini Mandir with traditional gopuram" loading="lazy" />
+            <span class="temple-card__distance">~8 KM</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 05</span>
+            <h3 class="temple-card__title">Vitthal Rukmini Mandir</h3>
+            <p class="temple-card__desc">
+              Dedicated to Lord Vitthal (a form of Krishna) and his consort Rukmini, this
+              temple is a center of Bhakti tradition in the region. The temple is known for
+              its soulful abhanga singing, community kirtans, and the annual Pandharpur yatra.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Bhakti tradition center with soulful kirtans and community worship</span>
+            </div>
+            <a href="#" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Temple 6: Gaimukh Temple -->
+        <div class="temple-card reveal reveal--delay-6" id="temple-gaimukh">
+          <div class="temple-card__image">
+            <img src="images/gallery-pond.png" alt="Gaimukh Temple with sacred water source" loading="lazy" />
+            <span class="temple-card__distance">~10 KM</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 06</span>
+            <h3 class="temple-card__title">Gaimukh Temple</h3>
+            <p class="temple-card__desc">
+              Named after the cow-mouth (Gaimukh) shaped rock from which a sacred spring
+              emerges, this ancient temple is a site of natural wonder and spiritual
+              significance. The holy water is believed to have purifying and healing properties.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Sacred spring temple with holy water of healing significance</span>
+            </div>
+            <a href="#" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PILGRIMAGE ROUTE ═══════ -->
+  <section class="content-section content-section--cream" id="route">
+    <div class="container">
+      <div class="pilgrimage-route">
+        <div class="reveal reveal--left">
+          <span class="section-label">Pilgrimage Route</span>
+          <h2 class="section-heading">The Recommended<br />Route</h2>
+          <div class="divider"></div>
+          <p class="split-layout__text" style="max-width:480px;">
+            Follow this curated pilgrimage route to experience each temple along the
+            Sacred Trail in the ideal sequence, maximizing both spiritual impact and
+            travel convenience.
+          </p>
+
+          <div class="route-steps" style="margin-top:var(--space-xl);">
+            <div class="route-step">
+              <div class="route-step__marker">1</div>
+              <div>
+                <div class="route-step__title">Sri Anantha Padmanabha Temple</div>
+                <div class="route-step__desc">Begin your sacred journey at the main temple</div>
+                <div class="route-step__time">Starting Point</div>
+              </div>
+            </div>
+            <div class="route-step">
+              <div class="route-step__marker">2</div>
+              <div>
+                <div class="route-step__title">Vishnu Mandir</div>
+                <div class="route-step__desc">Walk through the forest path to the nearby Vishnu shrine</div>
+                <div class="route-step__time">~3 KM · 30 min walk</div>
+              </div>
+            </div>
+            <div class="route-step">
+              <div class="route-step__marker">3</div>
+              <div>
+                <div class="route-step__title">Shani Mahatma Mandir</div>
+                <div class="route-step__desc">Continue to the powerful Shani temple for blessings</div>
+                <div class="route-step__time">~5 KM · 15 min drive</div>
+              </div>
+            </div>
+            <div class="route-step">
+              <div class="route-step__marker">4</div>
+              <div>
+                <div class="route-step__title">Mailar Mallanna Mandir</div>
+                <div class="route-step__desc">Ascend to the hilltop for panoramic views and worship</div>
+                <div class="route-step__time">~7 KM · 20 min drive</div>
+              </div>
+            </div>
+            <div class="route-step">
+              <div class="route-step__marker">5</div>
+              <div>
+                <div class="route-step__title">Vitthal Rukmini → Gaimukh → Manik Prabhu</div>
+                <div class="route-step__desc">Complete the circuit through the remaining sacred sites</div>
+                <div class="route-step__time">~8–12 KM · 30 min drive</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="split-layout__image reveal reveal--right reveal--delay-2">
+          <img src="images/trail-hero.png" alt="Aerial view of the pilgrimage route through the forest"
+            loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ ONE-DAY SPIRITUAL JOURNEY ═══════ -->
+  <section class="content-section content-section--dark" id="journey">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:var(--space-3xl);">
+        <span class="section-label section-label--dark reveal">One-Day Journey</span>
+        <h2 class="section-heading section-heading--light section-heading--centered reveal reveal--delay-1">
+          A Complete Spiritual<br />Day on the Trail
+        </h2>
+        <p class="section-desc section-desc--centered section-desc--light reveal reveal--delay-2">
+          Experience the entire Sacred Trail in a single transformative day.
+          Here's the ideal schedule for your spiritual journey.
+        </p>
+        <div class="divider divider--centered reveal reveal--delay-3"></div>
+      </div>
+
+      <div class="journey-cards">
+        <div class="journey-card reveal reveal--delay-1">
+          <div class="journey-card__icon">🌅</div>
+          <div class="journey-card__time">5:30 AM</div>
+          <h3 class="journey-card__title">Dawn Start</h3>
+          <p class="journey-card__desc">
+            Arrive at Sri Anantha Padmanabha Temple for the sacred Suprabhatam. Watch the
+            forest come alive with the first light as you attend the morning aarti.
+          </p>
+        </div>
+
+        <div class="journey-card reveal reveal--delay-2">
+          <div class="journey-card__icon">🚶</div>
+          <div class="journey-card__time">8:00 AM</div>
+          <h3 class="journey-card__title">Forest Trail</h3>
+          <p class="journey-card__desc">
+            Walk the forest path to Vishnu Mandir and Shani Mahatma Temple. Enjoy the
+            meditative walk through the sacred grove with birdsong as your companion.
+          </p>
+        </div>
+
+        <div class="journey-card reveal reveal--delay-3">
+          <div class="journey-card__icon">⛰️</div>
+          <div class="journey-card__time">12:00 PM</div>
+          <h3 class="journey-card__title">Hill Temples</h3>
+          <p class="journey-card__desc">
+            Visit Mailar Mallanna on the hilltop and Vitthal Rukmini Mandir. Enjoy
+            prasadam lunch at one of the temple community kitchens.
+          </p>
+        </div>
+
+        <div class="journey-card reveal reveal--delay-4">
+          <div class="journey-card__icon">🌇</div>
+          <div class="journey-card__time">4:00 PM</div>
+          <h3 class="journey-card__title">Evening Closure</h3>
+          <p class="journey-card__desc">
+            Complete the trail at Gaimukh and Manik Prabhu temples. Return for the
+            evening Deeparadhana at the main temple as the sun sets over the forest.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOREST PATH EXPERIENCE ═══════ -->
+  <section class="content-section content-section--cream" id="forest-path">
+    <div class="container">
+      <div class="forest-path reveal reveal--scale">
+        <div class="forest-path__bg">
+          <img src="images/gallery-canopy.png" alt="Dense forest canopy along the sacred trail" loading="lazy" />
+        </div>
+        <div class="forest-path__content">
+          <span class="section-label section-label--dark">The Experience</span>
+          <h2 class="forest-path__title">The Forest Path<br />Experience</h2>
+          <p class="forest-path__desc">
+            The trails connecting these temples wind through one of the most pristine forest
+            ecosystems in the Bidar region. Walking these ancient paths is itself a spiritual
+            practice — a gradual immersion into the sacred landscape where every tree, every
+            birdsong, and every beam of sunlight through the canopy feels divinely orchestrated.
+          </p>
+          <div class="forest-path__features">
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">🌳</span>
+              <span>Ancient Tree Canopy</span>
+            </div>
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">🦚</span>
+              <span>Rich Wildlife</span>
+            </div>
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">🌸</span>
+              <span>Wildflower Meadows</span>
+            </div>
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">💧</span>
+              <span>Natural Springs</span>
+            </div>
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">🐦</span>
+              <span>Birding Trails</span>
+            </div>
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">🧘</span>
+              <span>Meditation Spots</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            🕉️ Sri Anantha Padmanabha
+            <span class="footer__logo-sub">Temple · Bidar, Karnataka</span>
+          </div>
+          <p class="footer__desc">
+            A sacred abode of Lord Vishnu, nestled within the serene forests near Bidar.
+            Where the divine and nature exist in eternal harmony.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg"
+                width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg"
+                width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg"
+                width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">Home</a>
+            <a href="about.html" class="footer__link">About Temple</a>
+            <a href="history.html" class="footer__link">History</a>
+            <a href="sacred-trail.html" class="footer__link">Sacred Trail</a>
+            <a href="gallery.html" class="footer__link">Gallery</a>
+            <a href="visit.html" class="footer__link">Plan Your Visit</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Sevas & Services</h3>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Daily Pooja</a>
+            <a href="#" class="footer__link">Special Abhishekam</a>
+            <a href="#" class="footer__link">Sahasranama Archana</a>
+            <a href="#" class="footer__link">Annadanam</a>
+            <a href="#" class="footer__link">Festival Calendar</a>
+            <a href="#" class="footer__link">Online Donation</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📍</span><span>Sri Anantha Padmanabha
+              Temple,<br />Near Bidar, Karnataka 585401, India</span></div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📞</span><span>+91 XXXXX XXXXX</span>
+          </div>
+          <div class="footer__contact-item"><span
+              class="footer__contact-icon">✉️</span><span>info@sriananthapadmanabha.org</span></div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">🕐</span><span>Mon–Sun: 6:00 AM – 12:00
+              PM<br />&amp; 4:00 PM – 8:00 PM</span></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Sri Anantha Padmanabha Temple Trust. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Service</a>
+          <a href="#" class="footer__bottom-link">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

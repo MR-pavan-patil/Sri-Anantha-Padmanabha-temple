@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Sri Anantha Padmanabha Temple | Bidar, Karnataka</title>
+  <meta name="description" content="View beautiful glimpses of Sri Anantha Padmanabha Temple and its surrounding sacred forest, ancient architecture, peaceful trails, and spiritual festivals in Bidar, Karnataka." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕉️</text></svg>" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <!-- ═══════ PAGE LOADER ═══════ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__symbol">🕉️</div>
+    <div class="loader__text">Sri Anantha Padmanabha Temple</div>
+    <div class="loader__bar"><div class="loader__bar-inner"></div></div>
+  </div>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar scrolled" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand" aria-label="Go to homepage">
+        <div class="navbar__om">🕉️</div>
+        <div class="navbar__logo">
+          Sri Anantha Padmanabha
+          <span class="navbar__logo-sub">Sacred Temple · Bidar</span>
+        </div>
+      </a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="about.html" class="navbar__link">About Temple</a>
+        <a href="history.html" class="navbar__link">History</a>
+        <a href="sacred-trail.html" class="navbar__link">Sacred Trail</a>
+        <a href="gallery.html" class="navbar__link active">Gallery</a>
+        <a href="visit.html" class="navbar__link">Visit</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ═══════ PAGE HERO ═══════ -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="images/gallery-canopy.png" alt="Mystical forest canopy at Sri Anantha Padmanabha Temple" loading="eager" />
+    </div>
+    <div class="page-hero__content">
+      <div class="page-hero__breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="page-hero__breadcrumb-sep">/</span>
+        <span>Gallery</span>
+      </div>
+      <h1 class="page-hero__title">Sacred Gallery</h1>
+      <p class="page-hero__desc">
+        Explore visual glimpses of the divine deity, ancient architecture,
+        mystical forest canopies, and vibrant spiritual celebrations.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════ GALLERY FILTER & MASONRY GRID ═══════ -->
+  <section class="gallery-page">
+    <div class="container">
+      
+      <!-- Filter Tabs -->
+      <div class="gallery-tabs" role="tablist" aria-label="Gallery Image Categories">
+        <button class="gallery-tab active" role="tab" aria-selected="true" data-filter="all">All Photos</button>
+        <button class="gallery-tab" role="tab" aria-selected="false" data-filter="temple">Temple & Architecture</button>
+        <button class="gallery-tab" role="tab" aria-selected="false" data-filter="forest">Sacred Forest</button>
+        <button class="gallery-tab" role="tab" aria-selected="false" data-filter="places">Sacred Places</button>
+        <button class="gallery-tab" role="tab" aria-selected="false" data-filter="festivals">Festivals & Rituals</button>
+      </div>
+
+      <!-- Masonry Grid -->
+      <div class="masonry-grid" id="masonry-grid">
+        
+        <!-- Image 1 -->
+        <div class="masonry-item" data-category="temple" role="button" aria-haspopup="dialog" aria-label="Open Temple Main View in lightbox">
+          <img src="images/temple-main.png" alt="The main entrance shrine of Sri Anantha Padmanabha Temple nestled in forest greenery" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Temple</span>
+            <h3 class="masonry-item__title">Temple Main View</h3>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="masonry-item" data-category="forest" role="button" aria-haspopup="dialog" aria-label="Open Forest Canopy in lightbox">
+          <img src="images/gallery-canopy.png" alt="Golden sunlight filtering through the dense green canopy of the sacred forest trees" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Sacred Forest</span>
+            <h3 class="masonry-item__title">Sunlit Canopy</h3>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="masonry-item" data-category="temple" role="button" aria-haspopup="dialog" aria-label="Open Ancient Pillars in lightbox">
+          <img src="images/gallery-pillars.png" alt="Intricately carved stone pillars inside the temple assembly hall" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Temple</span>
+            <h3 class="masonry-item__title">Ancient Carved Pillars</h3>
+          </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="masonry-item" data-category="places" role="button" aria-haspopup="dialog" aria-label="Open Sacred Pond in lightbox">
+          <img src="images/gallery-pond.png" alt="The sacred pushkarini pond with stone steps and lotuses in front of the temple" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Sacred Places</span>
+            <h3 class="masonry-item__title">Temple Pushkarini</h3>
+          </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="masonry-item" data-category="festivals" role="button" aria-haspopup="dialog" aria-label="Open Sacred Rituals in lightbox">
+          <img src="images/gallery-ritual.png" alt="Priests performing Vedic pooja and oil lamp offerings during a festival ceremony" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Festivals</span>
+            <h3 class="masonry-item__title">Sacred Aradhana</h3>
+          </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="masonry-item" data-category="forest" role="button" aria-haspopup="dialog" aria-label="Open Forest Trail in lightbox">
+          <img src="images/sacred-trail.png" alt="Winding stone pathway cutting through towering ancient trees in the holy woods" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Sacred Forest</span>
+            <h3 class="masonry-item__title">Spiritual Forest Trail</h3>
+          </div>
+        </div>
+
+        <!-- Image 7 -->
+        <div class="masonry-item" data-category="places" role="button" aria-haspopup="dialog" aria-label="Open Vishnu Mandir in lightbox">
+          <img src="images/temple-vishnu-mandir.png" alt="The serene ancient Vishnu Mandir shrine situated along the forest trail" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Sacred Places</span>
+            <h3 class="masonry-item__title">Vishnu Mandir Shrine</h3>
+          </div>
+        </div>
+
+        <!-- Image 8 -->
+        <div class="masonry-item" data-category="places" role="button" aria-haspopup="dialog" aria-label="Open Mailar Mallanna in lightbox">
+          <img src="images/temple-mallanna.png" alt="Mailar Mallanna temple gopuram standing proud on a green hillside" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Sacred Places</span>
+            <h3 class="masonry-item__title">Mailar Mallanna Mandir</h3>
+          </div>
+        </div>
+
+        <!-- Image 9 -->
+        <div class="masonry-item" data-category="temple" role="button" aria-haspopup="dialog" aria-label="Open Chalukyan Architecture in lightbox">
+          <img src="images/temple-architecture.png" alt="Detailed view of carved figures and relief work in the ancient Dravidian style" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Temple</span>
+            <h3 class="masonry-item__title">Chalukyan Stone Art</h3>
+          </div>
+        </div>
+
+        <!-- Image 10 -->
+        <div class="masonry-item" data-category="festivals" role="button" aria-haspopup="dialog" aria-label="Open Lord Anantha Padmanabha Deity in lightbox">
+          <img src="images/lord-vishnu.png" alt="The presiding deity Lord Vishnu reclining on the cosmic serpent Shesha" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Festivals</span>
+            <h3 class="masonry-item__title">Anantha Shayana Murti</h3>
+          </div>
+        </div>
+
+        <!-- Image 11 -->
+        <div class="masonry-item" data-category="forest" role="button" aria-haspopup="dialog" aria-label="Open Mystical Woodlands in lightbox">
+          <img src="images/hero-bg.png" alt="Thick forest trees draped in morning mist creating a spiritual aura" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Sacred Forest</span>
+            <h3 class="masonry-item__title">Mystical Morning Forest</h3>
+          </div>
+        </div>
+
+        <!-- Image 12 -->
+        <div class="masonry-item" data-category="festivals" role="button" aria-haspopup="dialog" aria-label="Open Sunset Prayers in lightbox">
+          <img src="images/gallery-sunset.png" alt="Sunset silhouettes of temple domes against a deep orange sky" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Festivals</span>
+            <h3 class="masonry-item__title">Sunset Aarti Atmosphere</h3>
+          </div>
+        </div>
+
+        <!-- Image 13 -->
+        <div class="masonry-item" data-category="forest" role="button" aria-haspopup="dialog" aria-label="Open Forest Pathway in lightbox">
+          <img src="images/trail-hero.png" alt="Lush canopy over the forest dirt road leading towards the temple complex" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Sacred Forest</span>
+            <h3 class="masonry-item__title">Sacred Approach Path</h3>
+          </div>
+        </div>
+
+        <!-- Image 14 -->
+        <div class="masonry-item" data-category="festivals" role="button" aria-haspopup="dialog" aria-label="Open Sage Meditations in lightbox">
+          <img src="images/temple-origins.png" alt="Visual representation of ancient sages and Vedic rituals in the holy forest grove" loading="lazy" />
+          <div class="masonry-item__content">
+            <span class="masonry-item__category">Festivals</span>
+            <h3 class="masonry-item__title">Sage Tapasya Legends</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ LIGHTBOX MODAL ═══════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer overlay">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Close image viewer">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    
+    <button class="lightbox__btn lightbox__btn--prev" id="lightbox-prev" aria-label="Previous image">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+    
+    <div class="lightbox__wrapper">
+      <div class="lightbox__content">
+        <img id="lightbox-img" src="" alt="" />
+      </div>
+      <div class="lightbox__caption-panel">
+        <div class="lightbox__category" id="lightbox-cat">Category</div>
+        <div class="lightbox__caption" id="lightbox-cap">Image Caption</div>
+      </div>
+    </div>
+    
+    <button class="lightbox__btn lightbox__btn--next" id="lightbox-next" aria-label="Next image">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container">
+      
+      <!-- Newsletter Row -->
+      <div class="footer__newsletter">
+        <div class="footer__newsletter-info">
+          <h4 class="footer__newsletter-title">Subscribe to Sacred Updates</h4>
+          <p class="footer__newsletter-desc">Receive notifications about upcoming festivals, special poojas, and spiritual trail events.</p>
+        </div>
+        <form class="footer__newsletter-form" id="newsletterForm" action="#" method="POST">
+          <input type="email" class="footer__newsletter-input" placeholder="Your Email Address" required aria-label="Email address for newsletter" />
+          <button type="submit" class="btn btn--primary footer__newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Footer Grid -->
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            🕉️ Sri Anantha Padmanabha
+            <span class="footer__logo-sub">Temple · Bidar, Karnataka</span>
+          </div>
+          <p class="footer__desc">
+            A sacred abode of Lord Vishnu, nestled within the serene forests near Bidar.
+            Where the divine and nature exist in eternal harmony.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">Home</a>
+            <a href="about.html" class="footer__link">About Temple</a>
+            <a href="history.html" class="footer__link">History</a>
+            <a href="sacred-trail.html" class="footer__link">Sacred Trail</a>
+            <a href="gallery.html" class="footer__link">Gallery</a>
+            <a href="visit.html" class="footer__link">Plan Your Visit</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Sevas & Services</h3>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Daily Pooja</a>
+            <a href="#" class="footer__link">Special Abhishekam</a>
+            <a href="#" class="footer__link">Sahasranama Archana</a>
+            <a href="#" class="footer__link">Annadanam</a>
+            <a href="#" class="footer__link">Festival Calendar</a>
+            <a href="#" class="footer__link">Online Donation</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📍</span><span>Sri Anantha Padmanabha Temple,<br />Near Bidar, Karnataka 585401, India</span></div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📞</span><span>+91 XXXXX XXXXX</span></div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">✉️</span><span>info@sriananthapadmanabha.org</span></div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">🕐</span><span>Mon–Sun: 6:00 AM – 12:00 PM<br />&amp; 4:00 PM – 8:00 PM</span></div>
+        </div>
+      </div>
+      
+      <!-- Decorative Divider -->
+      <div class="footer__divider">
+        <div class="footer__divider-line"></div>
+        <div class="footer__divider-symbol">🕉️</div>
+        <div class="footer__divider-line"></div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Sri Anantha Padmanabha Temple Trust. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Service</a>
+          <a href="#" class="footer__bottom-link">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div class="back-to-top" id="backToTop" role="button" aria-label="Scroll back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+    </svg>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

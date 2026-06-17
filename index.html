@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Anantha Padmanabha Temple — Where Nature Meets Divinity | Bidar, Karnataka</title>
+  <meta name="description" content="Discover Sri Anantha Padmanabha Temple, a sacred Lord Vishnu temple nestled in a serene forest near Bidar, Karnataka. Experience divine spirituality amidst nature's beauty." />
+  <meta name="keywords" content="Sri Anantha Padmanabha Temple, Vishnu Temple, Bidar Karnataka, Hindu Temple, Sacred Forest, Pilgrimage" />
+  <meta name="author" content="Sri Anantha Padmanabha Temple Trust" />
+  <meta property="og:title" content="Sri Anantha Padmanabha Temple — Where Nature Meets Divinity" />
+  <meta property="og:description" content="A sacred Lord Vishnu temple nestled in a serene forest near Bidar, Karnataka." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon (Om symbol) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕉️</text></svg>" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <!-- ═══════ PAGE LOADER ═══════ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__symbol">🕉️</div>
+    <div class="loader__text">Sri Anantha Padmanabha Temple</div>
+    <div class="loader__bar">
+      <div class="loader__bar-inner"></div>
+    </div>
+  </div>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="#home" class="navbar__brand" aria-label="Go to homepage">
+        <div class="navbar__om">🕉️</div>
+        <div class="navbar__logo">
+          Sri Anantha Padmanabha
+          <span class="navbar__logo-sub">Sacred Temple · Bidar</span>
+        </div>
+      </a>
+
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html" class="navbar__link active">Home</a>
+        <a href="about.html" class="navbar__link">About Temple</a>
+        <a href="history.html" class="navbar__link">History</a>
+        <a href="sacred-trail.html" class="navbar__link">Sacred Trail</a>
+        <a href="gallery.html" class="navbar__link">Gallery</a>
+        <a href="visit.html" class="navbar__link">Visit</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+      </div>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="navbar__overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ═══════ HERO SECTION ═══════ -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <img src="images/hero-bg.png" alt="Mystical forest surrounding Sri Anantha Padmanabha Temple" loading="eager" />
+    </div>
+
+    <div class="hero__particles" aria-hidden="true"></div>
+
+    <div class="hero__content">
+      <p class="hero__sanskrit">॥ श्री अनंत पद्मनाभाय नमः ॥</p>
+
+      <h1 class="hero__title">
+        <span class="hero__title-highlight">Sri Anantha</span><br />
+        Padmanabha Temple
+      </h1>
+
+      <p class="hero__subtitle">"Where Nature Meets Divinity"</p>
+
+      <p class="hero__location">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+        </svg>
+        Near Bidar, Karnataka, India
+      </p>
+
+      <div class="hero__actions">
+        <a href="#about" class="btn btn--primary" id="hero-explore-btn">
+          Explore Temple
+          <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+          </svg>
+        </a>
+        <a href="visit.html" class="btn btn--outline" id="hero-visit-btn">
+          Plan Your Visit
+          <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-label="Scroll down to learn more">
+      <span class="hero__scroll-text">Scroll to explore</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════ TEMPLE INTRODUCTION ═══════ -->
+  <section class="intro" id="about">
+    <div class="container">
+      <div class="intro__grid">
+        <!-- Image Side -->
+        <div class="intro__image-wrapper reveal reveal--left">
+          <div class="intro__image">
+            <img src="images/temple-main.png" alt="Sri Anantha Padmanabha Temple surrounded by dense forest" loading="lazy" />
+            <div class="intro__badge">
+              <div class="intro__badge-icon">🏛️</div>
+              <div class="intro__badge-text">
+                <div class="intro__badge-label">Heritage Site</div>
+                <div class="intro__badge-value">Ancient Sacred Temple</div>
+              </div>
+            </div>
+          </div>
+          <div class="intro__image-accent" aria-hidden="true"></div>
+        </div>
+
+        <!-- Content Side -->
+        <div class="intro__content reveal reveal--right reveal--delay-2">
+          <span class="section-label">About the Temple</span>
+          <h2 class="section-heading">
+            A Divine Abode of<br />
+            Lord Vishnu
+          </h2>
+          <div class="divider"></div>
+
+          <p class="intro__text">
+            Nestled deep within the verdant forests near Bidar, Karnataka, Sri Anantha Padmanabha Temple stands
+            as a timeless testament to devotion and divine grace. This ancient temple, dedicated to Lord Vishnu
+            in his eternal reclining form upon the cosmic serpent Anantha, offers a rare and profound spiritual
+            experience where the sacred and the natural world converge in perfect harmony.
+          </p>
+
+          <p class="intro__text">
+            Surrounded by towering ancient trees, the gentle sounds of nature, and the fragrance of wildflowers,
+            pilgrims and visitors alike find themselves enveloped in an atmosphere of unparalleled peace and
+            serenity. The temple's sacred precincts have been a beacon of devotion for centuries, drawing
+            seekers from far and wide.
+          </p>
+
+          <div class="intro__features">
+            <div class="intro__feature">
+              <span class="intro__feature-icon">🙏</span>
+              <span>Sacred Vishnu Shrine</span>
+            </div>
+            <div class="intro__feature">
+              <span class="intro__feature-icon">🌳</span>
+              <span>Dense Forest Setting</span>
+            </div>
+            <div class="intro__feature">
+              <span class="intro__feature-icon">🕊️</span>
+              <span>Serene Atmosphere</span>
+            </div>
+            <div class="intro__feature">
+              <span class="intro__feature-icon">📿</span>
+              <span>Ancient Heritage</span>
+            </div>
+          </div>
+
+          <a href="#history" class="btn btn--dark" id="intro-learn-btn">
+            Discover the History
+            <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ WHY VISIT ═══════ -->
+  <section class="why-visit" id="history">
+    <div class="container">
+      <div class="why-visit__header">
+        <span class="section-label section-label--dark reveal">Why Visit</span>
+        <h2 class="section-heading section-heading--light section-heading--centered reveal reveal--delay-1">
+          An Experience Beyond<br />the Ordinary
+        </h2>
+        <p class="section-desc section-desc--centered section-desc--light reveal reveal--delay-2">
+          Every journey to Sri Anantha Padmanabha Temple is a pilgrimage of the soul—a transformative
+          encounter with divinity, nature, and inner peace that stays with you forever.
+        </p>
+        <div class="divider divider--centered reveal reveal--delay-3"></div>
+      </div>
+
+      <div class="why-visit__grid">
+        <div class="why-visit__card reveal reveal--delay-1">
+          <div class="why-visit__icon">🙏</div>
+          <h3 class="why-visit__card-title">Spiritual Experience</h3>
+          <p class="why-visit__card-desc">
+            Immerse yourself in ancient Vedic rituals, divine chanting, and the profound spiritual
+            energy that permeates every corner of this sacred temple dedicated to Lord Vishnu.
+          </p>
+        </div>
+
+        <div class="why-visit__card reveal reveal--delay-2">
+          <div class="why-visit__icon">🌿</div>
+          <h3 class="why-visit__card-title">Sacred Forest</h3>
+          <p class="why-visit__card-desc">
+            Walk through ancient forest trails canopied by towering trees, where sunlight filters
+            through the leaves creating an ethereal, almost mystical atmosphere.
+          </p>
+        </div>
+
+        <div class="why-visit__card reveal reveal--delay-3">
+          <div class="why-visit__icon">☮️</div>
+          <h3 class="why-visit__card-title">Peaceful Environment</h3>
+          <p class="why-visit__card-desc">
+            Escape the noise of modern life and find solace in the tranquil environs of the temple,
+            where the only sounds are birdsong, rustling leaves, and temple bells.
+          </p>
+        </div>
+
+        <div class="why-visit__card reveal reveal--delay-4">
+          <div class="why-visit__icon">🏛️</div>
+          <h3 class="why-visit__card-title">Cultural Heritage</h3>
+          <p class="why-visit__card-desc">
+            Discover centuries of rich cultural heritage, intricate stone carvings, and architectural
+            marvels that tell the story of devotion and artistic excellence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TEMPLE HIGHLIGHTS ═══════ -->
+  <section class="highlights" id="trail">
+    <div class="container">
+      <div class="highlights__header">
+        <span class="section-label reveal">Temple Highlights</span>
+        <h2 class="section-heading section-heading--centered reveal reveal--delay-1">
+          Discover What Makes<br />This Temple Unique
+        </h2>
+        <p class="section-desc section-desc--centered reveal reveal--delay-2">
+          From the divine presence of Lord Vishnu to the enchanting forest that cradles this sacred site,
+          every aspect of Sri Anantha Padmanabha Temple is a wonder to behold.
+        </p>
+        <div class="divider divider--centered reveal reveal--delay-3"></div>
+      </div>
+
+      <div class="highlights__grid">
+        <div class="highlight-card reveal reveal--delay-1">
+          <div class="highlight-card__image">
+            <img src="images/lord-vishnu.png" alt="Lord Vishnu deity in the sanctum sanctorum" loading="lazy" />
+          </div>
+          <div class="highlight-card__body">
+            <div class="highlight-card__number">01</div>
+            <h3 class="highlight-card__title">Lord Vishnu</h3>
+            <p class="highlight-card__desc">
+              The presiding deity, Lord Anantha Padmanabha, rests in eternal repose upon
+              the serpent Anantha Shesha. The divine idol radiates a serene, transcendent energy
+              that inspires deep devotion and wonder.
+            </p>
+          </div>
+        </div>
+
+        <div class="highlight-card reveal reveal--delay-2">
+          <div class="highlight-card__image">
+            <img src="images/sacred-trail.png" alt="Sacred forest trail leading to the temple" loading="lazy" />
+          </div>
+          <div class="highlight-card__body">
+            <div class="highlight-card__number">02</div>
+            <h3 class="highlight-card__title">Forest Location</h3>
+            <p class="highlight-card__desc">
+              Enveloped by a pristine, dense forest teeming with biodiversity, the temple's
+              location is a natural sanctuary. Ancient trees stand as silent guardians, and the air
+              is alive with the melodies of exotic birds.
+            </p>
+          </div>
+        </div>
+
+        <div class="highlight-card reveal reveal--delay-3">
+          <div class="highlight-card__image">
+            <img src="images/gallery-ritual.png" alt="Sacred rituals and offerings at the temple" loading="lazy" />
+          </div>
+          <div class="highlight-card__body">
+            <div class="highlight-card__number">03</div>
+            <h3 class="highlight-card__title">Sacred Atmosphere</h3>
+            <p class="highlight-card__desc">
+              The convergence of spiritual chanting, flickering oil lamps, fragrant incense, and the
+              surrounding forest creates an atmosphere of profound sacredness that touches every visitor's heart.
+            </p>
+          </div>
+        </div>
+
+        <div class="highlight-card reveal reveal--delay-4">
+          <div class="highlight-card__image">
+            <img src="images/gallery-sunset.png" alt="Sunset view of the temple and surrounding forest" loading="lazy" />
+          </div>
+          <div class="highlight-card__body">
+            <div class="highlight-card__number">04</div>
+            <h3 class="highlight-card__title">Pilgrimage Destination</h3>
+            <p class="highlight-card__desc">
+              Revered as a significant pilgrimage destination, devotees embark on the journey to seek
+              blessings, fulfill vows, and experience the divine grace of Lord Padmanabha in this
+              extraordinary forest setting.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ GALLERY PREVIEW ═══════ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="gallery__header">
+        <div>
+          <span class="section-label reveal">Gallery</span>
+          <h2 class="section-heading reveal reveal--delay-1">
+            Glimpses of<br />Divine Beauty
+          </h2>
+        </div>
+        <a href="gallery.html" class="btn btn--dark btn--sm reveal reveal--delay-2" id="gallery-view-all-btn">
+          View All Photos
+          <svg class="btn__icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide reveal reveal--scale reveal--delay-1">
+          <img src="images/hero-bg.png" alt="Aerial view of temple in the forest" loading="lazy" />
+          <span class="gallery__item-label">Temple Aerial View</span>
+        </div>
+        <div class="gallery__item reveal reveal--scale reveal--delay-2">
+          <img src="images/gallery-ritual.png" alt="Sacred rituals at the temple" loading="lazy" />
+          <span class="gallery__item-label">Sacred Rituals</span>
+        </div>
+        <div class="gallery__item reveal reveal--scale reveal--delay-3">
+          <img src="images/gallery-pillars.png" alt="Ancient carved temple pillars" loading="lazy" />
+          <span class="gallery__item-label">Ancient Pillars</span>
+        </div>
+        <div class="gallery__item reveal reveal--scale reveal--delay-4">
+          <img src="images/gallery-pond.png" alt="Sacred temple pond with lotuses" loading="lazy" />
+          <span class="gallery__item-label">Sacred Pond</span>
+        </div>
+        <div class="gallery__item gallery__item--wide reveal reveal--scale reveal--delay-5">
+          <img src="images/gallery-canopy.png" alt="Sunlight through the sacred forest canopy" loading="lazy" />
+          <span class="gallery__item-label">Forest Canopy</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ LOCATION SECTION ═══════ -->
+  <section class="location" id="visit">
+    <div class="container">
+      <div class="location__grid">
+        <div class="reveal reveal--left">
+          <span class="section-label">Plan Your Visit</span>
+          <h2 class="section-heading">
+            Finding Your Way to<br />
+            the Sacred Forest
+          </h2>
+          <p class="section-desc">
+            Sri Anantha Padmanabha Temple is located in a serene forested area near Bidar, Karnataka.
+            The journey itself is a beautiful experience, winding through verdant landscapes
+            that prepare the spirit for the divine encounter ahead.
+          </p>
+          <div class="divider"></div>
+
+          <div class="location__info-items">
+            <div class="location__info-item">
+              <div class="location__info-icon">📍</div>
+              <div>
+                <div class="location__info-label">Address</div>
+                <div class="location__info-value">Near Bidar, Karnataka 585401, India</div>
+              </div>
+            </div>
+            <div class="location__info-item">
+              <div class="location__info-icon">🕐</div>
+              <div>
+                <div class="location__info-label">Temple Timings</div>
+                <div class="location__info-value">6:00 AM – 12:00 PM &amp; 4:00 PM – 8:00 PM</div>
+              </div>
+            </div>
+            <div class="location__info-item">
+              <div class="location__info-icon">📞</div>
+              <div>
+                <div class="location__info-label">Contact</div>
+                <div class="location__info-value">+91 XXXXX XXXXX</div>
+              </div>
+            </div>
+            <div class="location__info-item">
+              <div class="location__info-icon">🚗</div>
+              <div>
+                <div class="location__info-label">How to Reach</div>
+                <div class="location__info-value">Accessible by road from Bidar city center</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="location__map-wrapper reveal reveal--right reveal--delay-2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d121508.84901980598!2d77.45!3d17.91!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e00cbe9ba4f%3A0xbb9bfb2b9e49f9d2!2sBidar%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Location of Sri Anantha Padmanabha Temple near Bidar, Karnataka">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand Column -->
+        <div class="footer__brand">
+          <div class="footer__logo">
+            🕉️ Sri Anantha Padmanabha
+            <span class="footer__logo-sub">Temple · Bidar, Karnataka</span>
+          </div>
+          <p class="footer__desc">
+            A sacred abode of Lord Vishnu, nestled within the serene forests near Bidar.
+            Where the divine and nature exist in eternal harmony.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook" id="social-facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram" id="social-instagram">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+              </svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="YouTube" id="social-youtube">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">Home</a>
+            <a href="about.html" class="footer__link">About Temple</a>
+            <a href="history.html" class="footer__link">History</a>
+            <a href="sacred-trail.html" class="footer__link">Sacred Trail</a>
+            <a href="gallery.html" class="footer__link">Gallery</a>
+            <a href="visit.html" class="footer__link">Plan Your Visit</a>
+          </div>
+        </div>
+
+        <!-- Sevas & Services -->
+        <div>
+          <h3 class="footer__heading">Sevas & Services</h3>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Daily Pooja</a>
+            <a href="#" class="footer__link">Special Abhishekam</a>
+            <a href="#" class="footer__link">Sahasranama Archana</a>
+            <a href="#" class="footer__link">Annadanam</a>
+            <a href="#" class="footer__link">Festival Calendar</a>
+            <a href="#" class="footer__link">Online Donation</a>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📍</span>
+            <span>Sri Anantha Padmanabha Temple,<br />Near Bidar, Karnataka 585401, India</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📞</span>
+            <span>+91 XXXXX XXXXX</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">✉️</span>
+            <span>info@sriananthapadmanabha.org</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">🕐</span>
+            <span>
+              Mon–Sun: 6:00 AM – 12:00 PM<br />
+              &amp; 4:00 PM – 8:00 PM
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">
+          &copy; 2026 Sri Anantha Padmanabha Temple Trust. All rights reserved.
+        </p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Service</a>
+          <a href="#" class="footer__bottom-link">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
