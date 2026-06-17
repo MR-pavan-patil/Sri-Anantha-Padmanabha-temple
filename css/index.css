@@ -564,6 +564,7 @@ button {
     backdrop-filter: blur(30px);
     transition: right var(--transition-slow);
     box-shadow: -10px 0 40px rgba(0,0,0,0.3);
+    z-index: calc(var(--z-sticky) + 5);
   }
 
   .navbar__links.open {
