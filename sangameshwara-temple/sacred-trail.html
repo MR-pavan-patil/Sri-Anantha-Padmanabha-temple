@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sacred Trail — Shri Sangameshwara Swamy Temple | Kosam, Bidar</title>
+  <meta name="description" content="Explore the sacred trail of temples in the Bidar-Kosam region. Discover Sangameshwara Swamy, Mailar Mallanna, Shani Mahatma, Manik Prabhu, Vitthal Rukmini, and Gaimukh temples." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕉️</text></svg>" />
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+
+  <!-- ═══════ PAGE LOADER ═══════ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__symbol">🕉️</div>
+    <div class="loader__text">Shri Sangameshwara Swamy Temple</div>
+    <div class="loader__bar"><div class="loader__bar-inner"></div></div>
+  </div>
+
+  <!-- ═══════ NAVBAR ═══════ -->
+  <nav class="navbar scrolled" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__brand" aria-label="Go to homepage">
+        <div class="navbar__om">🕉️</div>
+        <div class="navbar__logo">
+          Shri Sangameshwara
+          <span class="navbar__logo-sub">Sacred Temple · Kosam</span>
+        </div>
+      </a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="about.html" class="navbar__link">About Temple</a>
+        <a href="history.html" class="navbar__link">History</a>
+        <a href="sacred-trail.html" class="navbar__link active">Sacred Trail</a>
+        <a href="gallery.html" class="navbar__link">Gallery</a>
+        <a href="visit.html" class="navbar__link">Visit</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="navbar__overlay" id="navOverlay"></div>
+  </nav>
+
+  <!-- ═══════ PAGE HERO ═══════ -->
+  <section class="page-hero">
+    <div class="page-hero__bg">
+      <img src="images/trail-hero.png" alt="Sacred countryside road and trails near Humnabad" loading="eager" />
+    </div>
+    <div class="page-hero__content">
+      <div class="page-hero__breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="page-hero__breadcrumb-sep">/</span>
+        <span>Sacred Trail</span>
+      </div>
+      <h1 class="page-hero__title">The Sacred Trail</h1>
+      <p class="page-hero__desc">
+        A spiritual guide to the prominent temples of the Bidar-Kosam region —
+        connecting sacred spaces of local history, community faith, and nature.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════ SACRED TRAIL OVERVIEW ═══════ -->
+  <section class="content-section content-section--cream" id="overview">
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-layout__content reveal reveal--left">
+          <span class="section-label">Trail Overview</span>
+          <h2 class="section-heading">Embark on a<br />Spiritual Journey</h2>
+          <div class="divider"></div>
+          <p class="split-layout__text">
+            The countryside of Bidar and Humnabad is home to a rich constellation of sacred shrines, 
+            each dedicated to a different deity and serving as an anchor of community faith. Together, 
+            these temples form a unique pilgrimage trail that has been traveled by locals for generations.
+          </p>
+          <p class="split-layout__text">
+            From the peaceful stone Shiva Lingam of Sangameshwara Temple in Kosam to the hilltop shrine of 
+            Mailar Mallanna, from the spiritual seat of Manik Prabhu in Maniknagar to the forest spring of 
+            Gaimukh, each site tells its own story of devotion, heritage, and peace.
+          </p>
+          <p class="split-layout__text">
+            Walking or driving through this countryside path connects you to the natural beauty of Karnataka's 
+            agricultural heartland, making the travel itself a meditative, calming experience.
+          </p>
+        </div>
+        <div class="split-layout__image reveal reveal--right reveal--delay-2">
+          <img src="images/sacred-trail.png" alt="Countryside path leading through crop fields" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ TEMPLE CARDS ═══════ -->
+  <section class="content-section content-section--white" id="temples">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:var(--space-3xl);">
+        <span class="section-label reveal">Sacred Shrines</span>
+        <h2 class="section-heading section-heading--centered reveal reveal--delay-1">
+          Temples Along<br />the Regional Trail
+        </h2>
+        <p class="section-desc section-desc--centered reveal reveal--delay-2">
+          Explore the six prominent temples of this spiritual circuit, each offering a unique window 
+          into the heritage of the Deccan region.
+        </p>
+        <div class="divider divider--centered reveal reveal--delay-3"></div>
+      </div>
+
+      <div class="temple-cards-grid">
+        <!-- Temple 1: Sangameshwara Temple -->
+        <div class="temple-card reveal reveal--delay-1" id="temple-sangameshwara">
+          <div class="temple-card__image">
+            <img src="images/temple-main.png" alt="Shri Sangameshwara Swamy Temple Entrance" loading="lazy" />
+            <span class="temple-card__distance">Active Site</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 01</span>
+            <h3 class="temple-card__title">Shri Sangameshwara Temple</h3>
+            <p class="temple-card__desc">
+              Nestled inside Kosam village, this sacred Shiva shrine represents the guardian deity of the surrounding 
+              farming communities. Known for its quiet countryside serenity, traditional harvest offerings, and 
+              uncommercialized atmosphere.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Central Shiva shrine of Kosam, agricultural protector and venue of Deepotsavam</span>
+            </div>
+            <a href="index.html" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5-7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Temple 2: Mailar Mallanna Mandir -->
+        <div class="temple-card reveal reveal--delay-2" id="temple-mallanna">
+          <div class="temple-card__image">
+            <img src="images/temple-mallanna.png" alt="Mailar Mallanna Mandir on the hilltop" loading="lazy" />
+            <span class="temple-card__distance">~15 KM</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 02</span>
+            <h3 class="temple-card__title">Mailar Mallanna Mandir</h3>
+            <p class="temple-card__desc">
+              Perched on a scenic hilltop in Khanapur village, this highly revered temple is dedicated to Lord Mallanna 
+              (Khandoba / Martanda Bhairava). Famous for its vibrant Bhandara tradition where turmeric powder is thrown.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Hilltop Shiva shrine managed by shepherd Kuruba priests, famous for Sunday market</span>
+            </div>
+            <a href="../temples/mailar-mallanna.html" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5-7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Temple 3: Shani Mahatma Mandir -->
+        <div class="temple-card reveal reveal--delay-3" id="temple-shani">
+          <div class="temple-card__image">
+            <img src="images/gallery-pillars.png" alt="Shani Mahatma Mandir stone structure" loading="lazy" />
+            <span class="temple-card__distance">~17 KM</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 03</span>
+            <h3 class="temple-card__title">Shani Mahatma Mandir</h3>
+            <p class="temple-card__desc">
+              A powerful temple dedicated to Lord Shani (Saturn), located within the Mailar-Velaspur religious circuit. 
+              Devotees gather here in large numbers on Saturdays to perform oil rituals to ward off planetary obstacles.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Revered Shani shrine featuring a Navagraha complex and Saturday prayers</span>
+            </div>
+            <a href="../temples/shani-mahatma.html" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5-7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Temple 4: Manik Prabhu Mandir -->
+        <div class="temple-card reveal reveal--delay-4" id="temple-manik-prabhu">
+          <div class="temple-card__image">
+            <img src="images/gallery-ritual.png" alt="Maniknagar Manik Prabhu temple complex" loading="lazy" />
+            <span class="temple-card__distance">~18 KM</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 04</span>
+            <h3 class="temple-card__title">Manik Prabhu Mandir</h3>
+            <p class="temple-card__desc">
+              Located in Maniknagar, Humnabad, this is the main seat of the Manik Prabhu Avadhuta Sampradaya. 
+              Dedicated to the 19th-century saint Shri Manik Prabhu Maharaj, who was revered as an incarnation of Lord Dattatreya.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Famous Dattatreya ashram promoting interfaith harmony and spiritual meditation</span>
+            </div>
+            <a href="../temples/manik-prabhu.html" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5-7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Temple 5: Vitthal Rukmini Mandir -->
+        <div class="temple-card reveal reveal--delay-5" id="temple-vitthal-rukmini">
+          <div class="temple-card__image">
+            <img src="images/temple-main.png" alt="Vitthal Rukmini Mandir entrance" loading="lazy" />
+            <span class="temple-card__distance">~16 KM</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 05</span>
+            <h3 class="temple-card__title">Vitthal Rukmini Mandir</h3>
+            <p class="temple-card__desc">
+              Situated near the Velaspur forest borders, this temple dedicated to Lord Vitthal (Krishna) and Goddess Rukmini 
+              serves as the local center for the Warkari Bhakti tradition, holding daily abhanga chanting sessions.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Spiritual center for Vitthal Bhakti, daily abhangas, and local bhajan community</span>
+            </div>
+            <a href="../temples/vitthal-rukmini.html" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5-7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Temple 6: Gaimukh Temple -->
+        <div class="temple-card reveal reveal--delay-6" id="temple-gaimukh">
+          <div class="temple-card__image">
+            <img src="images/gallery-pond.png" alt="Gaimukh Temple water tank" loading="lazy" />
+            <span class="temple-card__distance">~16 KM</span>
+          </div>
+          <div class="temple-card__body">
+            <span class="temple-card__number">Temple 06</span>
+            <h3 class="temple-card__title">Gaimukh Temple</h3>
+            <p class="temple-card__desc">
+              A unique rock-cut temple inside the Velaspur forest valley, where a natural perennial water spring flows 
+              out from a cow-mouth shaped stone. Pilgrims visit here to wash away sins and seek healing blessings.
+            </p>
+            <div class="temple-card__importance">
+              <span class="temple-card__importance-icon">⭐</span>
+              <span>Forest valley cave temple with sacred water spring of healing properties</span>
+            </div>
+            <a href="../temples/gaimukh-temple.html" class="temple-card__btn">
+              View Details
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5-7.5M21 12H3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ PILGRIMAGE ROUTE ═══════ -->
+  <section class="content-section content-section--cream" id="route">
+    <div class="container">
+      <div class="pilgrimage-route">
+        <div class="reveal reveal--left">
+          <span class="section-label">Pilgrimage Route</span>
+          <h2 class="section-heading">The Recommended<br />Route</h2>
+          <div class="divider"></div>
+          <p class="split-layout__text" style="max-width:480px;">
+            Follow this curated regional route starting from Kosam village to experience these spiritual landmarks 
+            in the ideal sequence, maximizing convenience and scenic countryside views.
+          </p>
+
+          <div class="route-steps" style="margin-top:var(--space-xl);">
+            <div class="route-step">
+              <div class="route-step__marker">1</div>
+              <div>
+                <div class="route-step__title">Shri Sangameshwara Swamy Temple (Kosam)</div>
+                <div class="route-step__desc">Begin your journey at this quiet rural Shiva shrine</div>
+                <div class="route-step__time">Starting Point</div>
+              </div>
+            </div>
+            <div class="route-step">
+              <div class="route-step__marker">2</div>
+              <div>
+                <div class="route-step__title">Sri Manik Prabhu Mandir (Maniknagar)</div>
+                <div class="route-step__desc">Travel to the famous Humnabad Dattatreya ashram for meditation</div>
+                <div class="route-step__time">~18 KM · 25 min drive</div>
+              </div>
+            </div>
+            <div class="route-step">
+              <div class="route-step__marker">3</div>
+              <div>
+                <div class="route-step__title">Sri Mailar Mallanna Temple (Khanapur)</div>
+                <div class="route-step__desc">Drive to the hilltop Shiva temple for aarti and panoramic views</div>
+                <div class="route-step__time">~15 KM · 20 min drive</div>
+              </div>
+            </div>
+            <div class="route-step">
+              <div class="route-step__marker">4</div>
+              <div>
+                <div class="route-step__title">Gaimukh, Vitthal Rukmini & Shani Mahatma</div>
+                <div class="route-step__desc">Complete the circuit through the Velaspur valley shrines</div>
+                <div class="route-step__time">~2-3 KM distance between each</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="split-layout__image reveal reveal--right reveal--delay-2">
+          <img src="images/trail-hero.png" alt="Scenic road view of the regional temple route" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ ONE-DAY SPIRITUAL JOURNEY ═══════ -->
+  <section class="content-section content-section--dark" id="journey">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:var(--space-3xl);">
+        <span class="section-label section-label--dark reveal">One-Day Journey</span>
+        <h2 class="section-heading section-heading--light section-heading--centered reveal reveal--delay-1">
+          A Complete Regional<br />Day on the Trail
+        </h2>
+        <p class="section-desc section-desc--centered section-desc--light reveal reveal--delay-2">
+          Experience these diverse spiritual landmarks in a single day. Here is the recommended travel plan.
+        </p>
+        <div class="divider divider--centered reveal reveal--delay-3"></div>
+      </div>
+
+      <div class="journey-cards">
+        <div class="journey-card reveal reveal--delay-1">
+          <div class="journey-card__icon">🌅</div>
+          <div class="journey-card__time">6:00 AM</div>
+          <h3 class="journey-card__title">Kosam Morning Calm</h3>
+          <p class="journey-card__desc">
+            Arrive at Sangameshwara Temple in Kosam for early morning darshan. Watch the rural sunrise 
+            over sugarcane fields in total silence.
+          </p>
+        </div>
+
+        <div class="journey-card reveal reveal--delay-2">
+          <div class="journey-card__icon">🧘</div>
+          <div class="journey-card__time">9:30 AM</div>
+          <h3 class="journey-card__title">Ashram Meditation</h3>
+          <p class="journey-card__desc">
+            Drive to Maniknagar, Humnabad. Spend time in quiet meditation at the samadhi shrine 
+            and walk through the peaceful ashram gardens.
+          </p>
+        </div>
+
+        <div class="journey-card reveal reveal--delay-3">
+          <div class="journey-card__icon">⛰️</div>
+          <div class="journey-card__time">1:00 PM</div>
+          <h3 class="journey-card__title">Hilltop Aarti</h3>
+          <p class="journey-card__desc">
+            Reach Mailar Mallanna on the hilltop. Experience the unique Bhandara (turmeric) aarti and 
+            witness the traditional devotional chants.
+          </p>
+        </div>
+
+        <div class="journey-card reveal reveal--delay-4">
+          <div class="journey-card__icon">🌇</div>
+          <div class="journey-card__time">4:30 PM</div>
+          <h3 class="journey-card__title">Forest Spring Closure</h3>
+          <p class="journey-card__desc">
+            Complete the trail at Velaspur's Gaimukh temple. Wash your hands at the natural spring water 
+            and rest under banyan trees as the sun sets.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ Countryside PATH EXPERIENCE ═══════ -->
+  <section class="content-section content-section--cream" id="forest-path">
+    <div class="container">
+      <div class="forest-path reveal reveal--scale">
+        <div class="forest-path__bg">
+          <img src="images/gallery-canopy.png" alt="Countryside trees along the road in Kosam" loading="lazy" />
+        </div>
+        <div class="forest-path__content">
+          <span class="section-label section-label--dark">The Experience</span>
+          <h2 class="forest-path__title">The Countryside Road<br />Experience</h2>
+          <p class="forest-path__desc">
+            The roads connecting these regional shrines wind through some of the most scenic agricultural landscapes 
+            in Bidar district. Traveling here offers a deep connection to simple village life and natural beauty.
+          </p>
+          <div class="forest-path__features">
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">🌾</span>
+              <span>Sugarcane Crop Fields</span>
+            </div>
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">🌳</span>
+              <span>Shady Neem & Banyan</span>
+            </div>
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">💧</span>
+              <span>Natural Country Streams</span>
+            </div>
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">🐦</span>
+              <span>Rural Birds & Wildlife</span>
+            </div>
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">🚶</span>
+              <span>Quiet Country Lanes</span>
+            </div>
+            <div class="forest-path__feature">
+              <span class="forest-path__feature-icon">🌅</span>
+              <span>Deccan Sunset Views</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ FOOTER ═══════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            🕉️ Shri Sangameshwara
+            <span class="footer__logo-sub">Temple · Kosam, Karnataka</span>
+          </div>
+          <p class="footer__desc">
+            A sacred temple of Lord Shiva (worshipped as Shri Sangameshwara Swamy), serving as a vital spiritual guardian 
+            for the agricultural villages of Kosam.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg"
+                width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+              </svg></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg"
+                width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              </svg></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><svg xmlns="http://www.w3.org/2000/svg"
+                width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+              </svg></a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">Home</a>
+            <a href="about.html" class="footer__link">About Temple</a>
+            <a href="history.html" class="footer__link">History</a>
+            <a href="sacred-trail.html" class="footer__link">Sacred Trail</a>
+            <a href="gallery.html" class="footer__link">Gallery</a>
+            <a href="visit.html" class="footer__link">Plan Your Visit</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Sevas & Services</h3>
+          <div class="footer__links">
+            <a href="#" class="footer__link">Daily Pooja</a>
+            <a href="#" class="footer__link">Special Abhishekam</a>
+            <a href="#" class="footer__link">Sahasranama Archana</a>
+            <a href="#" class="footer__link">Annadanam</a>
+            <a href="#" class="footer__link">Festival Calendar</a>
+            <a href="#" class="footer__link">Online Donation</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact Us</h3>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📍</span><span>Shri Sangameshwara Swamy Temple,<br />Kosam Village, near Changler, Bidar District, Karnataka 585418</span></div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">📞</span><span>+91 XXXXX XXXXX</span></div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">✉️</span><span>info@shrisangameshwara.org</span></div>
+          <div class="footer__contact-item"><span class="footer__contact-icon">🕐</span><span>Mon–Sun: 6:00 AM – 7:30 PM</span></div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 Shri Sangameshwara Swamy Temple Trust. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#" class="footer__bottom-link">Privacy Policy</a>
+          <a href="#" class="footer__bottom-link">Terms of Service</a>
+          <a href="#" class="footer__bottom-link">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
